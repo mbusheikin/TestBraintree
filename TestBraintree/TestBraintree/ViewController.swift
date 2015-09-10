@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Braintree
 
 class ViewController: UIViewController {
 
