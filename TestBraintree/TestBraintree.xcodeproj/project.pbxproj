@@ -726,6 +726,7 @@
 		277CF7631BA107C70088100F /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		277CF7651BA107CF0088100F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		277CF7671BA107D30088100F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27D1919C1BA540CE008D0ECE /* TestBraintree-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestBraintree-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -817,6 +818,7 @@
 				277CF4741BA106E50088100F /* Images.xcassets */,
 				277CF4761BA106E50088100F /* LaunchScreen.xib */,
 				277CF46B1BA106E50088100F /* Supporting Files */,
+				27D1919C1BA540CE008D0ECE /* TestBraintree-Bridging-Header.h */,
 			);
 			path = TestBraintree;
 			sourceTree = "<group>";
@@ -1730,6 +1732,7 @@
 		277CF4601BA106E50088100F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = aftrapp;
 				TargetAttributes = {
@@ -2196,9 +2199,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestBraintree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestBraintree/TestBraintree-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -2207,9 +2213,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestBraintree/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestBraintree/TestBraintree-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -2360,6 +2368,7 @@
 				277CF4891BA106E50088100F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277CF48A1BA106E50088100F /* Build configuration list for PBXNativeTarget "TestBraintreeTests" */ = {
 			isa = XCConfigurationList;
@@ -2368,6 +2377,7 @@
 				277CF48C1BA106E50088100F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277CF4AB1BA107420088100F /* Build configuration list for PBXNativeTarget "Braintree" */ = {
 			isa = XCConfigurationList;
@@ -2376,6 +2386,7 @@
 				277CF4AD1BA107420088100F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277CF4AF1BA107420088100F /* Build configuration list for PBXNativeTarget "BraintreeTests" */ = {
 			isa = XCConfigurationList;
@@ -2384,6 +2395,7 @@
 				277CF4B11BA107420088100F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
